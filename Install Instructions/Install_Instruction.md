@@ -1,6 +1,6 @@
 ## Install Instructions:
 
-__Step1:__ Open the link  [Repository Link](https://github.com/rpVishal/LoginPage) and go to 'code' option.
+__Step1:__ Open the link  [Repository Link](https://github.com/rpVishal/LoginPage) and go to 'code' option which is in green click on that a dropdown menu will open.
 
 __Step2:__ Download the zip folder. After downloading unzip the folder and open it then there will be one more folder after opening copy that folder which you will see after opening the unzip folder.
 
