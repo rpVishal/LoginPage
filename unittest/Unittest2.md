@@ -10,7 +10,7 @@ unit test to check behaviour of the function using different inputs.
 The function takes a int "option" as a choice from the user.
 
 ### Problems associated
-1) If a user is pasing any character, float, double, etc. value in the forgot menu output screen then the program terminates. And default is only handling the integer value.
+1) If a user is passing any character, float, double, etc. value in the forgot menu output screen then the program terminates. And default() is only handling the integer value.
 
 ### Solution
 1) An exception handler is added to the function of forgot(), Whenever the function will throw an error i.e __if out_of_range__ or __invalid_argument__ whenever these situation arises then exception handler can easily handle them.
