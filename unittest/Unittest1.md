@@ -1,5 +1,5 @@
 # Unit Test | LoginPage | Document prepared by Vishal Rajput
-## Module Name : Login | Location : UserManager.h
+## Module Name : Login | Location : UserManager.c
 ### Function Name : displayMenu()
 ### ID : LoginTest001
 
