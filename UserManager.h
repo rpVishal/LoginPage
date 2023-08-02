@@ -10,7 +10,7 @@ private:
     std::vector<std::string> usernames;
 public:
     UserManager(const std::string& file);
-
+void clearConsole();
     void displayMenu();
     void login();
     void registration();
