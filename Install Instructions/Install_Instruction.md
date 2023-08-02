@@ -20,6 +20,6 @@ __Step9:__ After the configuration is done click on generate and after that clic
 
 __Step10:__ Project will get opened in Visual Studio. When the project gets opened we will see solution explorer in that we will have an 'login' project. Right click on 'login' and a menu will open in that there will be an option 'Set as Startup Project' click on that.
 
-__Step11:__ Click on the arrow which is on the left side of 'login' which have a dropdown menu and then after click for the dropdown menu for Source file. Then we will see main.cpp and usermanager.cpp and then open it.
+__Step11:__ Click on the arrow which is on the left side of 'login' which have a dropdown menu and then after click for the dropdown menu for 'Source file'. Then we will see main.cpp and usermanager.cpp and then open it.
 
 __Step12:__ Now, Run Program by pressing ctrl+F5 or from the navigation menu.
