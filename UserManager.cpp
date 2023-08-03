@@ -254,7 +254,7 @@ void UserManager::menu() {
     do {
         displayMenu();
 
-        std::cout << "If you want to continue press(Y/y):  ";
+        std::cout << "If you want to continue press(Y/y) and if you want to completely exit from the program press any other key:  ";
         std::cin >> choice;
 
     } while (choice == 'Y' || choice == 'y');
