@@ -1,7 +1,7 @@
 ## Install Instructions:
 
 __Step1:__ Open the link [Repository Link](https://github.com/rpVishal/LoginPage) and go to 'code' option which is in green click on that a drop-down menu will open.
-
+![alt text](https://drive.google.com/file/d/1x7eG3aW94LyxTbno556XZZ1nDRYvkdxV/view?usp=sharing)
 __Step2:__ Click on Download Zip and download the zip folder. After downloading unzip the folder and open it then there will be one more folder after opening copy that folder which you will see after opening the unzip folder.
 
 __Step3:__ Create one new folder(name of your choice) and then paste the folder which is in unzip folder in newly created folder.
