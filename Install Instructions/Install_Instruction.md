@@ -2,7 +2,7 @@
 
 __Step1:__ Open the link [Repository Link](https://github.com/rpVishal/LoginPage) and go to 'code' option which is in green click on that a drop-down menu will open.
 
-__Step2:__ Click on Download Zip and download the zip folder. After downloading unzip the folder and open it then there will be one more folder after opening copy that folder which you will see after opening the unzip folder.
+__Step2:__ Click on Download Zip and download the zip folder. Once the folder has been downloaded, unzipped, and opened, another folder will appear. Copy the folder that appears when the unzip folder has been opened.
 
 __Step3:__ Create one new folder(name of your choice) and then paste the folder which is in unzip folder in newly created folder.
 
