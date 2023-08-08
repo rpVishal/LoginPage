@@ -20,7 +20,7 @@ void UserManager::clearConsole() {
 
 //The function UserManager::displayMenu(), presents a menu to the user with various options related to user management.
 void UserManager::displayMenu() {
-    int c;
+    std::string c;
     clearConsole();
     std::cout << "\t----------------------------------------Welcome To Login Page----------------------------------------\n\n\n\n";
     std::cout << "\t\t\t\t\t\t1. Login\n";
@@ -28,67 +28,29 @@ void UserManager::displayMenu() {
     std::cout << "\t\t\t\t\t\t3. Forgot password\n";
     std::cout << "\t\t\t\t\t\t4. List Usernames\n";
     std::cout << "\t\t\t\t\t\t5. Exit\n";
+    std::cout << "\t\t\t\t\t\tEnter your choice: ";
 
+    std::cin >> c;
 
-    while (true) {
-        std::cout << "\t\t\t\t\t\tEnter your choice: ";
-
-        try {
-            std::cin >> c;
-            if (std::cin.fail()) {
-                throw std::invalid_argument("Invalid input. Please enter a valid integer between 1 and 5.");
-            }
-
-            if (c < 1 || c > 5) {
-                throw std::out_of_range("Invalid integer. Please enter a valid integer between 1 and 5.");
-            }
-            break;
-        }
-        catch (const std::invalid_argument& e) {
-            std::cout << "Error: " << e.what() << "\n";
-            std::cin.clear();
-
-        }
-        catch (const std::out_of_range& e) {
-            std::cout << "Error: " << e.what() << "\n";
-            std::cin.clear();
-
-        }
-
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');//Used to discard any remaining characters in the input buffer up to the next newline character. 
-    }
-    switch (c) {
-    case 1:
+    if (c == "1") {
         login();
-        break;
-
-    case 2:
+    } else if (c == "2") {
         registration();
-        break;
-
-    case 3:
+    } else if (c == "3") {
         forgot();
-        break;
-
-    case 4:
-        //Case 4 ensures that only admin users can access and view the list of usernames.
+    } else if (c == "4") {
         if (admin()) {
             listUsernames();
-        }
-        else {
+        } else {
             std::cout << "Access denied. This option is for admins only.\n";
         }
-        break;
-
-    case 5:
+    } else if (c == "5") {
         std::cout << "Thank you. Exiting...\n";
-        break;
-
-    default:
-        std::cout << "Please select a valid option.\n";
-
+    } else {
+        std::cout << "Invalid Input.\n";
     }
 }
+
 
 //The function UserManager::login() allows a user to log in by providing a username and password.
 void UserManager::login() {
@@ -153,39 +115,16 @@ void UserManager::registration() {
 
 //The UserManager::forgot() function is used for handling the "Forgot Password" feature. It allows users to get their forgotten password by searching for their account using their username.
 void UserManager::forgot() {
-    int option;
+    std::string option;
     clearConsole();
     std::cout << "\t\t\t\t\tForgot Password?\n";
     std::cout << "Press 1 to search your id by username\n";
     std::cout << "Press 2 to go back to the main menu\n";
-    while (true) {
-        std::cout << "Enter your choice: ";
-        try {
-            std::cin >> option;
-            if (std::cin.fail()) {
-                throw std::invalid_argument("Invalid input. Please enter an integer either 1 or 2.");
-            }
-            if (option < 1 || option > 2) {
-                throw std::out_of_range("Invalid integer. Please enter either 1 or 2: ");
-            }
+    std::cout << "Enter your choice: ";
+    
+    std::cin >> option;
 
-
-            break;
-        }
-        catch (const std::invalid_argument& e) {
-            std::cout << "Error: " << e.what() << std::endl;
-            std::cin.clear();
-
-        }
-        catch (const std::out_of_range& e) {
-            std::cout << "Error: " << e.what() << std::endl;
-            std::cin.clear();
-
-        }
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-    }
-    switch (option) {
-    case 1: {
+    if (option == "1") {
         int count = 0;
         std::string suserID, sid, spass;
         std::cout << "\n\t\tEnter the username which you remember: ";
@@ -205,15 +144,15 @@ void UserManager::forgot() {
         else {
             std::cout << "Sorry, your account was not found.\n";
         }
-        break;
     }
-    case 2:
-        break;
-    default:
-        std::cout << "Wrong choice. Please try again.\n";
+    else if (option == "2") {
+        displayMenu();
     }
-
+    else {
+        std::cout << "Invalid input.\n";
+    }
 }
+
 //The listUsernames function is used to read the usernames from the file specified by the filename member variable and displays them if the admin password is entered correctly.
 void UserManager::listUsernames() {
     clearConsole();
