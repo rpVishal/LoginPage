@@ -56,9 +56,6 @@ __6. Exiting the Program__
 The user can exit the program by selecting the __Exit__ option from the menu.
 
 
-## [Unit Test 1 and problem associated](https://github.com/rpVishal/LoginPage/blob/main/unittest/Unittest1.md)
-## [Unit Test 2 and problem associated](https://github.com/rpVishal/LoginPage/blob/main/unittest/Unittest2.md)
-
 
 ## Conclusion
 This document provided an overview of the implementation of a simple login page using C++ classes and functions. The UserManager class effectively manages user-related operations, and the program offers a user-friendly interface for users to log in, register, recover passwords, and view registered usernames.
